@@ -3,8 +3,8 @@
 ## Gustavo Nadal Bayer - 24066371-2 - ADSIS5S-NA
 ## Éder de Bastos - 24247490-2 - ADSIS5S-NA
 ## Carlos Henrique Aplewicz - 24099857-2 - ADSIS5S-NA
-## Amauri Barbosa de Souza Júnior - 24******-* - ADSIS5S-NA
-## Gabriel Lazarine e Silva - 24******-* - ADSIS5S-NA
+## Amauri Barbosa de Souza Júnior - 24489378-2 - ADSIS5S-NA
+## Gabriel Lazarine e Silva - 24124844-2 - ADSIS5S-NA
 
 Seja bem-vindo ao nosso repositório das atividades 1, 2 e 3 de programação mobile proposto pelo professor da UniCesumar de Ponta Grossa João "Goku" Vitor dos Santos (github.com/QAkarotto).
 
