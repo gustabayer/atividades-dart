@@ -9,7 +9,8 @@ As tarefas são organizadas em duas colunas:
 - A fazer
 - Concluídas
 
-O status da tarefa é definido pela coluna em que ela se encontra.
+O status da tarefa trabalha com drag and drop, e é definido pela coluna em que ela se encontra.
+Funciona de maneira similar ao kanban, onde ao card ser arrastado para a lista esquerda, se torna pendente, ao arrastar para a direita, se torna concluido
 
 ---
 
@@ -37,3 +38,5 @@ Os widgets utilizam:
 ## Execução
 
 1. Clonar o repositório:
+2. Instalar dependencias
+3. Executar o comando flutter run
