@@ -1,51 +1,18 @@
-class CalculatorLogic {
-  String display = '0';
+import 'package:flutter/material.dart';
+import 'screens/calculator_screen.dart';
 
-  double num1 = 0;
-  double num2 = 0;
-  String operador = '';
+void main() {
+  runApp(const MyApp());
+}
 
-  void inserirNumero(String numero) {
-    if (display == '0') {
-      display = numero;
-    } else {
-      display += numero;
-    }
-  }
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-  void selecionarOperador(String op) {
-    num1 = double.parse(display);
-    operador = op;
-    display = '0';
-  }
-
-  void calcular() {
-    num2 = double.parse(display);
-
-    double resultado = 0;
-
-    switch (operador) {
-      case '+':
-        resultado = num1 + num2;
-        break;
-      case '-':
-        resultado = num1 - num2;
-        break;
-      case '':
-        resultado = num1 num2;
-        break;
-      case '/':
-        resultado = num2 != 0 ? num1 / num2 : 0;
-        break;
-    }
-
-    display = resultado.toString();
-  }
-
-  void limpar() {
-    display = '0';
-    num1 = 0;
-    num2 = 0;
-    operador = '';
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: CalculatorScreen(),
+    );
   }
 }
