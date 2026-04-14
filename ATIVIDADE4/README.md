@@ -9,8 +9,14 @@ As tarefas são organizadas em duas colunas:
 - A fazer
 - Concluídas
 
-O status da tarefa trabalha com drag and drop, e é definido pela coluna em que ela se encontra.
-Funciona de maneira similar ao kanban, onde ao card ser arrastado para a lista esquerda, se torna pendente, ao arrastar para a direita, se torna concluido
+O status da tarefa é definido pela coluna em que ela se encontra,
+funcionando de forma similar a um kanban.
+
+A movimentação é implementada com os widgets nativos do Flutter:
+- `LongPressDraggable` — envolve cada card de tarefa, tornando-o arrastável
+  após pressão longa
+- `DragTarget` — envolve cada coluna, aceitando cards soltos sobre ela
+  e disparando `setCompleted` com o novo status correspondente
 
 ---
 
@@ -20,14 +26,19 @@ A gestão de estado foi implementada utilizando Riverpod com `StateNotifier`.
 
 - O estado é uma lista de tarefas (`List<Task>`)
 - A classe `TaskNotifier` é responsável por gerenciar alterações
-- O estado é imutável: sempre que há mudança, uma nova lista é criada
+- O estado é imutável: sempre que há mudança, uma nova lista é criada.
+Isso é necessário porque o Riverpod compara referências, então se a lista
+for modificada diretamente, ele não detecta a mudança e os widgets
+não reconstroem.
 
 Principais métodos:
 
 - `addTask` → adiciona uma nova tarefa
 - `removeTask` → remove uma tarefa
-- `setCompleted` → define o status de conclusão
-- `toggleTask` → alterna o estado da tarefa
+- `setCompleted(id, bool)` → usado pelo drag and drop, define o status
+  diretamente conforme a coluna de destino
+- `toggleTask(id)` → alterna o status sem precisar saber o valor atual,
+  usado por checkbox ou toque direto no card
 
 Os widgets utilizam:
 - `ref.watch` para escutar mudanças no estado
@@ -46,9 +57,16 @@ Os widgets utilizam:
 3. Removendo Tarefas
 ![Removendo Tarefas](removendo_tarefa.gif)
 
+## Dependências
+- flutter_riverpod: ^2.6.1
 
 ## Execução
 
 1. Clonar o repositório:
-2. Instalar dependencias
-3. Executar o comando flutter run
+   git clone https://github.com/gustabayer/atividades-dart
+2. Entrar no diretório:
+   cd atividades-dart/ATIVIDADE4
+3. Instalar dependências:
+   flutter pub get
+4. Executar:
+   flutter run
