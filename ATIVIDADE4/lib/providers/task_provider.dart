@@ -35,6 +35,13 @@ class TaskNotifier extends StateNotifier<List<Task>> {
     ];
   }
 
+  void setCompleted(String id, bool value) {
+    state = [
+      for (final task in state)
+        if (task.id == id) task.copyWith(isCompleted: value) else task,
+    ];
+  }
+
   // remoçao de task por id
   void removeTask(String id) {
     state = state.where((task) => task.id != id).toList();

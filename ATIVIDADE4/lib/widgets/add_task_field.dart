@@ -15,17 +15,23 @@ class AddTaskField extends ConsumerWidget {
         Expanded(
           child: TextField(
             controller: controller,
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               hintText: 'Nova tarefa...',
+              filled: true,
+              fillColor: Colors.grey[100],
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8),
+              ),
             ),
           ),
         ),
-        IconButton(
-          icon: const Icon(Icons.add),
+        const SizedBox(width: 8),
+        ElevatedButton(
           onPressed: () {
             ref.read(taskProvider.notifier).addTask(controller.text);
             controller.clear();
           },
+          child: const Icon(Icons.add),
         ),
       ],
     );
