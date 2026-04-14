@@ -72,15 +72,17 @@ Pré-requisitos
 
 Ter o Flutter instalado, verifique em:
 
-> flutter --version        
-
-## Exemplo
-
-![Demonstração](assets/execucao.gif)
+> flutter --version     
 
 ### Executar o projeto
+
 > cd calculadora_flutter         
 flutter pub get                       
 flutter run -d web-server
 
 Após executar, abra o link gerado pelo terminal no navegador
+
+## Interface
+
+![Demonstração](assets/execucao.gif)
+
