@@ -13,3 +13,32 @@ O nosso objetivo nessas atividades, em que uma delas é individual e as outras �
 Uma das atividades, como mencionada antes, era para ser feito de maneira individual, onde consistia em fazer um script em Dart extremamente simples para mostrar a famosa frase de "Hello World".
 
 Já o resto das atividades eram em grupo.
+
+## ▶️ Como executar o projeto Flutter
+
+### Pré-requisitos
+- Ter o **Flutter SDK** instalado  
+- Ter um editor como **VS Code** ou **Android Studio**  
+- Emulador Android/iOS configurado ou dispositivo físico conectado  
+
+### Passos
+
+```bash
+1. Clone o repositório: git clone https://github.com/gustabayer/atividades-dart.git
+2. Navegue para a pasta: cd atividades-dart
+3. Instale Dependencias flutter pub get
+4. Rode o projeto: flutter run
+
+```
+
+## Contribuição dos Integrantes
+Projeto 2:
+Gustavo Bayer — criação do projeto biblioteca
+
+Projeto 3:
+Carlos Henrique Aplewicz — criação da lógica da calculadora
+Gabriel Lazarine e Silva — criação da interface da calculadora
+
+Projeto 4:
+Amauri Barbosa de Souza Júnior — criação da lógica da lista to-do
+Éder de Bastos — criação da interface da lista to-do
