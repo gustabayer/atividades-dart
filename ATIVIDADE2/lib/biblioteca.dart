@@ -15,7 +15,7 @@ class Biblioteca {
   // read
   void listarLivros() {
     if (_livros.isEmpty) {
-      print('\n✘ Nenhum livro cadastrado.\n');
+      print('\nNenhum livro cadastrado.\n');
       return;
     }
 
