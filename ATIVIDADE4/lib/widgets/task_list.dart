@@ -41,7 +41,6 @@ class TaskList extends ConsumerWidget {
       },
       builder: (context, candidateData, rejectedData) {
         return SizedBox.expand(
-          // 🔥 GARANTE TAMANHO
           child: Container(
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
