@@ -1,0 +1,13 @@
+name: atividade4
+description: To-Do List com Riverpod
+
+environment:
+  sdk: '^3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.6.1
+
+flutter:
+  uses-material-design: true
