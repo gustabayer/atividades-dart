@@ -38,7 +38,7 @@ Os widgets utilizam:
 ## Gifs de Funcionamento
 
 1. Criando Tarefas
-![Criando Tarefas](arrastando_tarefa.gif)
+![Criando Tarefas](criando_tarefa.gif)
 
 2. Arrastando Tarefas
 ![Arrastando Tarefas](arrastando_tarefa.gif)
