@@ -35,6 +35,18 @@ Os widgets utilizam:
 
 ---
 
+## Gifs de Funcionamento
+
+1. Criando Tarefas
+![Criando Tarefas](arrastando_tarefa.gif)
+
+2. Arrastando Tarefas
+![Arrastando Tarefas](arrastando_tarefa.gif)
+
+3. Removendo Tarefas
+![Removendo Tarefas](removendo_tarefa.gif)
+
+
 ## Execução
 
 1. Clonar o repositório:
